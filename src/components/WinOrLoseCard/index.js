@@ -13,6 +13,8 @@ const WinOrLossCard = props => {
     : 'https://assets.ccbp.in/frontend/react-js/lose-game-img.png'
   return (
     <div className="win-loss-bg">
+      <img className="win-loss-img-s" src={url} alt="win or lose" />
+
       <div className="text-container">
         <h1>{isWon ? 'You Won' : 'You Loss'}</h1>
 
@@ -29,7 +31,7 @@ const WinOrLossCard = props => {
           Play Again
         </button>
       </div>
-      <img className="win-loss-img" src={url} alt="win or loss" />
+      <img className="win-loss-img-m" src={url} alt="win or lose" />
     </div>
   )
 }

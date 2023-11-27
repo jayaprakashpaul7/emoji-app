@@ -48,7 +48,7 @@ class EmojiGame extends Component {
     if (isEmojiPresent) {
       this.finishAndSetTopScore(clickedLength)
     } else {
-      if (emojisList.length === clickedLength) {
+      if (emojisList.length - 1 === clickedLength) {
         this.finishAndSetTopScore(emojisList.length)
       }
       this.setState(prevState => ({
@@ -93,3 +93,4 @@ class EmojiGame extends Component {
 }
 
 export default EmojiGame
+// ccbp submit RJSCPU31DB

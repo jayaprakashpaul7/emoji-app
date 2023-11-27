@@ -1,19 +1,35 @@
 /* Write your code here. */
 .win-loss-bg {
-  background-color: rgba(11, 225, 225, 0.5);
+  background-color: rgba(3, 241, 241, 0.5);
+  padding: 20px;
+  border-radius: 20px;
   height: 100%;
-  max-height: 370px;
   width: 100%;
-  max-width: 550px;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+@media (min-width: 552px) {
+  .win-loss-bg {
+    flex-direction: row;
+    max-width: 50%;
+  }
 }
 
 .text-container {
   text-align: center;
   font-family: 'Roboto';
+  height: 100%;
+  max-width: fit-content;
+  max-width: 50%;
   color: white;
+  order: 1;
+}
+@media (min-width: 552px) {
+  .text-container {
+    order: 0;
+  }
 }
 .score-title {
   font-weight: 700;
@@ -36,10 +52,31 @@
   border-radius: 5px;
   background-color: #ffce27;
 }
-.win-loss-img {
+.win-loss-img-s {
+  height: 250px;
+  width: 100%;
+  max-width: 190px;
+  align-self: center;
+
+  order: 0;
+  margin-left: 40px;
+}
+@media (min-width: 552px) {
+  .win-loss-img-s {
+    display: none;
+  }
+}
+.win-loss-img-m {
   height: 100%;
   max-height: 270px;
   width: 100%;
-  max-width: 220px;
+  display: none;
+  max-width: 190px;
   margin-left: 40px;
+}
+@media (min-width: 552px) {
+  .win-loss-img-m {
+    display: inline;
+    order: 1;
+  }
 }
