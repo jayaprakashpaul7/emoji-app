@@ -1,0 +1,33 @@
+/* Write your code here. */
+
+.bg {
+  background-color: #6a59ff;
+  height: 100%;
+  padding: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.brand {
+  display: flex;
+  color: white;
+  font-family: 'Roboto';
+  font-weight: 500;
+  border-radius: 18px;
+  align-items: center;
+}
+.score {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0%;
+  margin-left: auto;
+}
+.score-item {
+  list-style-type: none;
+  color: white;
+  font-family: 'Roboto';
+  font-weight: 500;
+  font-size: 19px;
+  margin-left: 17px;
+}
