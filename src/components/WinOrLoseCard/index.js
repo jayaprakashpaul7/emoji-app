@@ -18,7 +18,7 @@ const WinOrLossCard = props => {
       <div className="text-container">
         <h1>{isWon ? 'You Won' : 'You Loss'}</h1>
 
-        <p className="score-title">Score</p>
+        <p className="score-title">{isWon ? 'Best Score' : 'Score'}</p>
         <p className="score-no">
           {clickedLength}/{emojisList.length}
         </p>

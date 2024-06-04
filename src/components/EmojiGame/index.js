@@ -67,6 +67,7 @@ class EmojiGame extends Component {
           clickedLength={clickedEmojis.length}
           topscore={topscore}
           emojisList={emojisList}
+          isGameFinished={isGameFinish}
         />
         <div className="cards-bg">
           {isGameFinish ? (
