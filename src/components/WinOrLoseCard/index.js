@@ -18,12 +18,10 @@ const WinOrLossCard = props => {
       <img className="win-loss-img-s" src={url} alt="win or lose" />
 
       <div className="text-container">
-        <h1>{isWon ? 'You Won' : 'You Loss'}</h1>
+        <h1>{isWon ? 'You Won' : 'You Lose'}</h1>
 
         <p className="score-title">{isWon ? 'Best Score' : 'Score'}</p>
-        <p className="score-no">
-          {clickedLength}/{emojisList.length}
-        </p>
+        <p className="score-no">{clickedLength}/12</p>
 
         <button
           type="button"
@@ -33,7 +31,10 @@ const WinOrLossCard = props => {
           Play Again
         </button>
       </div>
-      <img className="win-loss-img-m" src={url} alt="win or lose" />
+
+      <div>
+        <img className="win-loss-img-m" src={url} alt="win or lose" />
+      </div>
     </div>
   )
 }

@@ -12,9 +12,7 @@ const EmojiCard = props => {
   return (
     <li>
       <button type="button" className="li-item" onClick={selectEmoji}>
-        <div>
-          <img className="emoji" src={emojiUrl} alt={emojiName} />
-        </div>
+        <img className="emoji" src={emojiUrl} alt={emojiName} />
       </button>
     </li>
   )
