@@ -4,9 +4,11 @@ import './index.css'
 
 const WinOrLossCard = props => {
   const {clickedLength, emojisList, resetGame} = props
+
   const handleResetGame = () => {
     resetGame()
   }
+
   const isWon = clickedLength === emojisList.length
   const url = isWon
     ? 'https://assets.ccbp.in/frontend/react-js/won-game-img.png'

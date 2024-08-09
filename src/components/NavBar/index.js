@@ -13,11 +13,11 @@ const NavBar = props => {
         <h1 className="brand-name">Emoji Game</h1>
       </div>
 
-      {isGameFinished ? null : (
+      {!isGameFinished && (
         <div className="score">
-          <p className="score-item">Score:{clickedLength}</p>
+          <p className="score-item">Score: {clickedLength}</p>
 
-          <p className="score-item">Top Score:{topscore}</p>
+          <p className="score-item">Top Score: {topscore}</p>
         </div>
       )}
     </nav>
